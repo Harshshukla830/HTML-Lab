@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Grid Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2f8;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            margin: 25px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 25px;
+            margin: 20px;
+            background-color: white;
+            border: 2px solid navy;
+            border-radius: 10px;
+        }
+
+        .grid-item {
+            background-color: #d6eaf8;
+            border: 2px solid steelblue;
+            padding: 35px;
+            text-align: center;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .grid-item:hover {
+            background-color: #aed6f1;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid Layout</h1>
+
+    <div class="grid-container">
+
+        <div class="grid-item">HTML</div>
+
+        <div class="grid-item">CSS</div>
+
+        <div class="grid-item">JavaScript</div>
+
+        <div class="grid-item">Java</div>
+
+        <div class="grid-item">Python</div>
+
+        <div class="grid-item">Web Development</div>
+
+    </div>
+
+</body>
+</html>
